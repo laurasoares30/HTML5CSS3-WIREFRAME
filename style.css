@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  background-color: #023535;
+}
+
+header{
+  background-color: #015958;
+}
+section{
+  background-color: #008F8C;
+}
+
+nav{
+  background-color: #03A678;
+}
+
+footer{
+  background-color: #015958;
+}
+
+aside{
+  background-color: #0CABA8;
+}
+
+article{
+  background-color: #0FC2C0;
+}
+
+header>section, div>section, aside>section, .sectionMin {margin: 15px;}
+
+header, nav, section, footer, aside, article{border: 1px solid #000;}
+
+main, aside, header, footer {width: auto;}
+
+#sectionMax, article, header, footer, main{margin-left: 15px;}
+
+header, footer, #sectionMax,article, main{margin-right: 15px;}
+
+header, main, .sectionPosition, div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionMin,#sectionMax {height: 110px;}
+
+footer, main{clear: both;}
+
+header{height: 186px;}
+
+nav{
+  margin: 10px 15px  10px  10px;
+  width: 45%;
+  height: 40px;
+}
+
+header > section{
+  width: 150px;
+  height: 150px;
+}
+
+div > section {
+  width: 50%;
+  height:100px;
+}
+
+
+#sectionRight{float: right;}
+#sectionLeft{float: left;}
+
+aside{
+  width:24%;
+  height: auto;
+}
+
+aside > section{
+  width: 85%;
+  height:200px;
+}
+
+.sectionMin {
+  width: 45%;
+}
+
+article{width: 50%;
+margin-left: 0;
+margin-right: 0;
+}
+
+#sectionMax{
+  width: ;
+}
+
+footer{
+  margin-top:15px;
+  height: 130px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  *{
+    padding: 0;
+  }
+
+  main:not(article){
+    margin:0, 15px,15px,15px;
+  }
+  main{
+    display: block;
+  }
+
+  article{
+    width: auto;
+    margin: 0;
+  }
+  aside{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #asideRight{
+    height: 234px;
+  }
+
+  article, aside:not(#asideLeft){
+    border-top: none;
+  }
+}
+
+@media only screen and (max-width: 760px){
+  
+  *{margin: 0;}
+
+  footer, header,#groupSection{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  header,#groupSection{display: block;}
+
+  header{float: none;}
+
+  header > section{
+    width: 100px;
+    height: 100px;
+  }
+
+  nav{
+    margin:15px;
+    width: auto;
+  }
+
+  #sectionLeft,#sectionRight{width: 99%;}
+
+  #sectionLeft, main{margin-left:0;}
+
+  main, #sectionRight{margin-right: 0;}
+
+  #sectionRight{margin-top: 0;}
+}
+
+@media only screen and (min-width: 1200px){
+
+ header{height: 250px;}
+
+ #sectionLeft, #sectionRight{height: 110px;}
+
+ aside > section{height: 230px;}
+
+ .sectionMin, #sectionMax{height: 130px;}
+
+ aside, article{height: 515px;}
+
+  aside > section{width: 90%;}
+}
